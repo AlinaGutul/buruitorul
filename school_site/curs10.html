@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Психология успеха: Развитие личностных качеств</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/c10.jpeg" alt="" class="imagem1" />
+          <h3>Психология успеха: Развитие личностных качеств</h3>
+          <p>
+            Тренинг "Психология успеха: Развитие личностных качеств" под
+            руководством Ирины Волковой предлагает участникам уникальную
+            возможность развить ключевые личностные качества, необходимые для
+            достижения успеха в различных сферах жизни. Ирина - опытный психолог
+            и тренер, который поможет вам раскрыть свой потенциал и стать
+            эффективным лидером своей жизни. <br><br>В рамках тренинга вы изучите
+            различные аспекты психологии успеха, включая самоанализ,
+            установление целей, управление временем, коммуникацию и мотивацию.
+            Ирина проводит интерактивные занятия, которые включают групповые
+            упражнения, ролевые игры, дискуссии и индивидуальные консультации,
+            чтобы помочь вам развить необходимые навыки и перспективы. <br><br>Стоимость
+            тренинга "Психология успеха: Развитие личностных качеств" составляет
+            550 лей в месяц. Это инвестиция в ваше личностное развитие и успех.
+            В рамках тренинга вы получите ценные инструменты и стратегии для
+            развития своих личностных качеств и достижения важных жизненных
+            целей. Групповая динамика и поддержка позволят вам расти и
+            развиваться в поддерживающей среде. <br><br>Присоединяйтесь к нашему
+            тренингу "Психология успеха: Развитие личностных качеств" под
+            руководством Ирины Волковой и станьте автором своего успеха.
+            Независимо от вашего текущего уровня навыков и достижений, вы
+            получите ценные знания и инструменты, которые помогут вам развиться
+            как личность и достичь поставленных целей.
+          </p>
+          <a href="curs.html">Вернуться к Курсам</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

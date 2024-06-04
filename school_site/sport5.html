@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Битва на сетке: Волейбольная команда лицея в действии</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/s5.png" alt="" class="imagem1" />
+          <h3>Битва на сетке: Волейбольная команда лицея в действии</h3>
+          <p>
+            Дата: 29.03.2023<br /><br />
+            Волейбольная команда лицея воплощает дух
+            сотрудничества, стратегии и силы. Команда проводит много времени на
+            тренировках, развивая тактическое мышление и улучшая свои физические
+            способности. Они учатся работать в команде, атаковать, защищаться и
+            принимать быстрые решения в игровой ситуации. Каждый игрок приносит
+            свой вклад в успех команды, и совместная работа позволяет им
+            достигать великолепных результатов. <br /><br />Волейбольная
+            команда лицея активно участвует в соревнованиях и турнирах на
+            региональном и национальном уровнях. Они соревнуются с другими
+            школьными командами, демонстрируя свои навыки и страсть к игре.
+            Матчи становятся захватывающими сражениями, где команда лицея
+            показывает высокий уровень мастерства и сражается до последнего
+            мяча. Их смелость, упорство и дружба на поле становятся примером для
+            других учеников и вдохновляют их принять участие в волейбольных
+            мероприятиях. <br /><br />Волейбольная команда лицея также
+            получает поддержку и признание со стороны учебного заведения и
+            широкой общественности. Церемонии награждения и призывы к успеху
+            создают атмосферу гордости и восхищения. Ученики, учителя и родители
+            горячо поддерживают команду, приходя на матчи и выражая свою
+            поддержку и энтузиазм. Волейбольная команда лицея становится
+            символом силы, спортивного духа и командного сотрудничества.
+            <br /><br />Участие в волейбольной команде лицея не только
+            развивает физические навыки и спортивные достижения, но также
+            помогает учащимся развивать ценные качества, такие как лидерство,
+            ответственность и настойчивость. Команда обучает их работе в
+            команде, решению проблем и преодолению трудностей. Они учатся быть
+            настойчивыми, добиваться целей и преодолевать свои личные
+            ограничения. Волейбольная команда лицея - это не просто спортивная
+            команда, это сообщество единомышленников, которые вместе достигают
+            великих высот на поле и в жизни.
+          </p>
+          <a href="sport.html">Вернуться к Спорту</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

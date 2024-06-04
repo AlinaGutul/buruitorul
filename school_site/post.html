@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Весеннее Воскресение: Радостная Пасха для всех</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/m1.jpg" alt="" class="imagem1" />
+          <h3>Весеннее Воскресение: Радостная Пасха для всех</h3>
+          <p>
+            Дата: 14.04.2023<br><br>
+            Весна – это время обновления и радости, а одним из наиболее ярких и
+            значимых праздников этого сезона является Пасха. В лицее Георгия
+            Победоносца мы всегда с нетерпением ждем этого дня, чтобы
+            отпраздновать его вместе, окунувшись в особую атмосферу радости и
+            духовного возрождения. <br><br> Пасхальная подготовка начинается задолго до
+            самого праздника. Все участники лицея с радостью включаются в
+            организацию и украшение школьных помещений. Классы и коридоры
+            преображаются яркими пасхальными композициями, цветущими ветвями и
+            праздничными символами. Учащиеся активно принимают участие в
+            мастер-классах по писанью пасхальных яиц, созданию уникальных
+            пасхальных открыток и декоративных элементов. <br><br> В сам день Пасхи в
+            лицее царит особая атмосфера. Ученики приходят в ярких и праздничных
+            нарядах, а преподаватели и сотрудники лицея встречают их с улыбками
+            и пожеланиями счастливого праздника. Все собираются вместе в актовом
+            зале, где проходит торжественная пасхальная служба. После службы
+            организуется пасхальный концерт, где ученики выступают с песнями,
+            танцами и поэтическими номерами, наполненными праздничным
+            настроением. <br><br> Весь день наполнен радостью, улыбками и взаимным
+            поздравлениями. Ученики делятся пасхальными яичницами, куличами и
+            крашеными яйцами, весело играют в пасхальные игры и устраивают
+            спортивные состязания. Пасхальное празднование в лицее Георгия
+            Победоносца - это время, когда все чувствуют себя единой большой
+            семьей, наполненной радостью, теплотой и взаимной поддержкой.
+            
+          </p>
+          <a href="blog.html">Вернуться к Мероприятиям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Первый шаг: Приветствуем новых учеников!</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/n1.jpg" alt="" class="imagem1" />
+          <h3>Первый шаг: Приветствуем новых учеников!</h3>
+          <p>
+            Дата: 29.05.2023<br><br>
+            Добро пожаловать в лицей Георгия Победоносца! Мы рады приветствовать
+            будущих первоклассников и помочь им сделать первый шаг на пути к
+            образованию. В этом разделе мы расскажем о процессе поступления в
+            первый класс и документах, необходимых для приема. <br><br>Для поступления в
+            первый класс лицея Георгия Победоносца вам потребуется собрать
+            несколько важных документов. Во-первых, вам понадобится заполнить
+            анкету поступающего, в которой указываются основные данные ребенка и
+            его родителей. Также вам потребуется предоставить копию
+            свидетельства о рождении ребенка и его паспорта. <br><br>Особое внимание
+            следует уделить медицинским документам. Вам необходимо будет
+            предоставить медицинскую справку о состоянии здоровья ребенка,
+            подтверждающую его пригодность для посещения образовательного
+            учреждения. Такая справка можно получить у вашего семейного врача
+            или в медицинском учреждении. <br><br>Мы стремимся сделать процесс
+            поступления в первый класс максимально простым и удобным для вас.
+            Все необходимые документы и анкеты можно получить на нашем
+            официальном сайте лицея или в приемной комиссии. Если у вас
+            возникают вопросы или вам требуется помощь, наши сотрудники всегда
+            готовы оказать вам поддержку и предоставить необходимую информацию.
+            <br><br>Поступление в первый класс лицея Георгия Победоносца - это особый и
+            важный шаг для вас и вашего ребенка. Мы гарантируем индивидуальный
+            подход к каждому ученику, качественное образование и комфортную
+            образовательную среду. Присоединяйтесь к нам и дайте своему ребенку
+            возможность начать свой учебный путь с нами!
+          </p>
+          <a href="news.html">Вернуться к Новостям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

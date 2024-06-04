@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Награда за труд: Вручение дипломов выпускникам</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/n5.jpg" alt="" class="imagem1" />
+          <h3>Награда за труд: Вручение дипломов выпускникам</h3>
+          <p>
+            Дата: 14.06.2023<br><br>
+            Вручение дипломов выпускникам – это особое мероприятие, которое
+            отмечает успешное завершение образовательного пути и открывает двери
+            к новым возможностям. Это момент, когда выпускники получают свои
+            заслуженные дипломы, которые подтверждают их образовательные
+            достижения и квалификацию. В этот день, родители, учителя и близкие
+            люди собираются вместе, чтобы отпраздновать успехи выпускников и
+            поделиться радостью и гордостью. <br /><br />
+            Вручение дипломов выпускникам обычно проводится в торжественной
+            атмосфере, с присутствием высших административных лиц,
+            педагогического персонала и сотрудников образовательного учреждения.
+            Часто это сопровождается речами, поздравлениями и вручением наград и
+            специальных призов за выдающиеся достижения и особый вклад в жизнь
+            школы или университета. Дипломы становятся символом академической и
+            профессиональной готовности выпускников к взрослой жизни и карьере.
+            <br /><br />
+            Вручение дипломов выпускникам имеет глубокий символический смысл.
+            Оно признает усилия и труд выпускников, которые были направлены на
+            достижение их учебных и личностных целей. Это также подчеркивает
+            значимость образования в жизни каждого выпускника и представляет
+            новые возможности для их будущего развития и карьеры. Вручение
+            дипломов выпускникам является важным ритуалом перехода в новую фазу
+            жизни и означает готовность к самостоятельности и ответственности.
+            <br /><br />
+            Вручение дипломов выпускникам также является временем для
+            воспоминаний и благодарности. В этот день выпускники могут вспомнить
+            свои учебные годы, друзей, учителей и опыт, который они получили.
+            Они могут выразить свою благодарность всем, кто поддерживал их на
+            протяжении их образовательного пути. Это момент, когда выпускники
+            осознают, что их достижения не были возможны без поддержки и помощи
+            окружающих и что они готовы покорять новые высоты в своей жизни.
+          </p>
+          <a href="news.html">Вернуться к Новостям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

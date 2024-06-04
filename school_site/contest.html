@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конкурсы</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!--Главная-->
+    <section id="about-blog">
+      <h2>Конкурсы</h2>
+    </section>
+    <section id="blog-container">
+      <div class="blogs">
+        <div class="post">
+          <img src="images/k1.jpg" alt="" />
+          <h3>Живая классика</h3>
+          <p>
+            Конкурс "Живая классика" - волнующий и увлекательный мир, который
+            оживает каждый год в школе Георгия Победоносца. Организатором этого
+            захватывающего мероприятия является Ирина Волкова, учитель
+            литературы, которая с огромной страстью и любовью вдохновляет
+            учеников на изучение классических произведений и проявление своих
+            творческих способностей.
+          </p>
+          <a href="contest1.html">Читать далее</a>
+        </div>
+
+        <div class="post">
+          <img src="images/k4.jpg" alt="" />
+          <h3>Шедевры для крылатых</h3>
+          <p>
+            Конкурс "Шедевры для крылатых" в школе Георгия Победоносца
+            представляет увлекательные конкурсы, организованные Ириной Кривой,
+            учителем биологии и поклонником пернатых. В рамках этих конкурсов
+            ученики имеют возможность не только расширить свои знания о птицах,
+            но и проявить свою творческую натуру, создавая уникальные и
+            функциональные скворечники для пернатых обитателей.
+          </p>
+          <a href="contest4.html">Читать далее</a>
+        </div>
+
+        <div class="post">
+          <img src="images/k2.jpg" alt="" />
+          <h3>Путешествие в англоязычный мир</h3>
+          <p>
+            Конкурс "Путешествие в англоязычный мир" в школе Георгия Победоносца
+            представляет захватывающие конкурсы, организованные учителями
+            английского языка. Эти соревнования призваны погрузить учащихся в
+            атмосферу английского языка, расширить их лексический запас, развить
+            навыки общения и уверенность в себе.
+          </p>
+          <a href="contest2.html">Читать далее</a>
+        </div>
+        <div class="post">
+          <img src="images/k3.jpg" alt="" />
+          <h3>Голоса книг</h3>
+          <p>
+            "Голоса книг" - захватывающие конкурсы, организованные Ириной
+            Волковой, учителем русского языка и литературы, в школе Георгия
+            Победоносца. Участники этих соревнований улучшают свои навыки чтения
+            вслух, артикуляции и актерского мастерства. Конкурсы позволяют
+            проявить творческий потенциал и погрузиться в увлекательный мир
+            русской литературы.
+          </p>
+          <a href="contest3.html">Читать далее</a>
+        </div>
+      </div>
+      <div class="cate">
+        <h2>Категории</h2>
+        <hr />
+        <a href="blog.html" class="active">Мероприятия</a>
+        <hr />
+        <a href="news.html">Новости</a>
+        <hr />
+        <a href="sport.html">Спорт</a>
+        <hr />
+        <a href="curs.html">Курсы и тренинги</a>
+        <hr />
+        <a href="contest.html">Конкурсы</a>
+        <hr />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

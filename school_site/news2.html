@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шаг в будущее: Процесс приема в старшие классы</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/n2.jpg" alt="" class="imagem1" />
+          <h3>Шаг в будущее: Процесс приема в старшие классы</h3>
+          <p>
+            Дата: 29.05.2023<br><br>
+            Процесс приема в старшие классы лицея Георгия Победоносца
+            представляет собой важный этап в жизни многих школьников,
+            стремящихся получить качественное образование и глубокие знания. Для
+            успешного поступления в лицей необходимо соблюсти определенные
+            условия и предоставить определенные документы. <br><br>Первым шагом при
+            поступлении в старшие классы лицея Георгия Победоносца является
+            ознакомление с требованиями и правилами приема. Администрация лицея
+            обычно опубликовывает на своем официальном сайте информацию о
+            процессе приема, необходимых документах и датах проведения
+            вступительных испытаний. <br><br>Основными документами, которые потребуются
+            для приема в старшие классы лицея, являются аттестат об основном
+            общем образовании и заявление от родителей или законных
+            представителей учащегося. Кроме того, могут потребоваться копии
+            документов, подтверждающих дополнительные достижения или
+            специализацию ученика, например, сертификаты оlimpiads. <br><br>Приемная
+            комиссия лицея Георгия Победоносца проводит вступительные испытания,
+            чтобы оценить уровень знаний и способности учащихся. Типичные
+            вступительные испытания могут включать в себя тестирование по
+            различным предметам, например, математике, русскому языку и
+            английскому языку, а также собеседование с участием учителей и
+            администрации лицея. <br><br>Процесс приема в старшие классы лицея Георгия
+            Победоносца представляет отличную возможность для школьников
+            продемонстрировать свои знания и навыки, а также почувствовать
+            атмосферу образовательного учреждения. Этот шаг в будущее поможет им
+            строить успешную карьеру и реализовать свой потенциал в
+            профессиональной сфере, подготовившись к сложностям и вызовам, с
+            которыми они столкнутся на своем пути.
+          </p>
+          <a href="news.html">Вернуться к Новостям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

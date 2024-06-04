@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>На поле соперничества: Школьные команды в соревнованиях</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/s3.jpg" alt="" class="imagem1" />
+          <h3>На поле соперничества: Школьные команды в соревнованиях</h3>
+          <p>
+            Дата: 26.04.2023<br /><br />
+            Школьные команды находятся в постоянной подготовке к соревнованиям,
+            тренируясь и совершенствуя свои спортивные навыки. Они работают
+            вместе, чтобы достичь высокого уровня командной игры и координации.
+            Будь то футбол, баскетбол, волейбол или другие виды спорта, эти
+            команды стремятся превзойти себя и достичь успеха в каждом матче или
+            турнире. <br /><br />Соревнования между школьными командами не
+            только развивают физическую выносливость и спортивные навыки
+            учащихся, но и воспитывают в них ценности справедливости, командной
+            работы и спортивной этики. Участие в соревнованиях научит их
+            взаимодействию с другими игроками, умению принимать решения в сжатых
+            ситуациях и развитию лидерских качеств. <br /><br />Соревнования
+            стимулируют конкуренцию и поднимают адреналин участников. Команды
+            борются за победу, демонстрируя свои лучшие навыки и стратегии.
+            Каждое соревнование становится возможностью для команды
+            продемонстрировать свой потенциал, а также изучить и улучшить свои
+            слабые места. Они учатся преодолевать неудачи и использовать их в
+            качестве мотивации для дальнейшего развития. <br /><br />Участие в
+            школьных командах не только помогает учащимся развивать физическую
+            активность, но и способствует их общему росту и развитию. Они учатся
+            работать в коллективе, развивают навыки руководства и учатся
+            справляться с давлением и стрессом. Командные дух, взаимная
+            поддержка и дружба, возникающие внутри этих команд, создают
+            неповторимую обстановку, которая вдохновляет учащихся достигать
+            больших высот и постоянно совершенствоваться как спортсмены и
+            личности.
+          </p>
+          <a href="sport.html">Вернуться к Спорту</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

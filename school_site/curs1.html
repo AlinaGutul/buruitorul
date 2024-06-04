@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Английский язык для детей</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/c1.jpg" alt="" class="imagem1" />
+          <h3>Английский язык для детей</h3>
+          <p>
+            Английский язык для детей - это увлекательные и интерактивные курсы,
+            предлагаемые в школе Георгия Победоносца. Разработанный специально
+            для детей, этот курс помогает им освоить английский язык с легкостью
+            и уверенностью. Каждое занятие проводит опытный преподаватель,
+            Архире Александр, который имеет богатый опыт работы с детьми и
+            помогает им весело и эффективно изучать новый язык. <br><br>В этих курсах
+            используются различные методики обучения, которые специально
+            адаптированы к потребностям и способностям детей. Игры, песни,
+            ролевые игры и другие интерактивные активности помогают детям
+            находиться в веселой и стимулирующей обстановке, что способствует
+            более эффективному усвоению языка. Каждый занятие предлагает новые
+            темы, лексику и грамматику, а также упражнения для развития навыков
+            чтения, письма, говорения и понимания на слух. <br><br>Курсы "Английский
+            язык для детей" в школе Георгия Победоносца предлагаются бесплатно,
+            чтобы обеспечить доступность образования для всех детей. Учиться
+            английскому языку становится еще более привлекательным и доступным
+            благодаря этой инициативе. Родители могут быть уверены, что их дети
+            получат качественное образование и хорошую подготовку к будущим
+            языковым вызовам. <br><br>Присоединяйтесь к нам в школе Георгия Победоносца
+            и предоставьте своему ребенку возможность расширить свои языковые
+            горизонты. Раздел "Английский язык для детей" предлагает веселое и
+            интересное обучение, которое поможет детям стать уверенными и
+            свободными в использовании английского языка. Учиться английскому
+            никогда не было так просто и увлекательно!
+          </p>
+          <a href="curs.html">Вернуться к Курсам</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проверка знаний: Время претестирований</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/n3.jpg" alt="" class="imagem1" />
+          <h3>Проверка знаний: Время претестирований</h3>
+          <p>
+            Дата: 27.03.2023<br /><br />
+            Время претестирований – это период, во время которого учащиеся сдают
+            специально разработанные тесты или задания, чтобы показать свои
+            знания, умения и понимание учебной программы. Эти тесты могут быть
+            проведены в различных форматах, включая письменные экзамены, устные
+            доклады или проектные работы. Часто они охватывают основные темы и
+            концепции, изученные в предыдущем курсе или семестре, и помогают
+            учителям оценить, какие области нуждаются в дополнительном изучении
+            или углублении.<br /><br />Время претестирований имеет несколько
+            целей. Во-первых, оно помогает учителям получить общую картину
+            знаний класса и понять, какие темы уже усвоены, а какие требуют
+            большего внимания и объяснения. Это позволяет им планировать учебный
+            план и адаптировать уроки под нужды конкретной группы студентов.
+            Во-вторых, претестирования позволяют учащимся самим оценить свой
+            уровень подготовки и понять, в каких областях им стоит усиленно
+            работать. Это помогает им определить свои цели и настроиться на
+            активное участие в образовательном процессе.<br /><br />Время
+            претестирований может также служить мотивацией для учащихся. Зная,
+            что их знания будут оценены, они часто стараются лучше
+            подготовиться, повторить материал и задать вопросы. Это помогает
+            создать атмосферу активного обучения и стимулирует интерес к
+            предмету. Кроме того, результаты претестирования могут быть
+            использованы для установления индивидуальных образовательных планов
+            для студентов, чтобы предоставить им дополнительную поддержку и
+            ресурсы в областях, где они испытывают трудности.<br /><br />Время
+            претестирований является важным инструментом в оценке
+            образовательного прогресса учащихся и планировании дальнейшего
+            обучения. Оно позволяет учителям и образовательным учреждениям
+            получить информацию о текущих знаниях и умениях студентов, а также
+            помогает учащимся самим оценить свои успехи и недостатки. В конечном
+            счете, время претестирований способствует качественному обучению и
+            индивидуальной поддержке, что способствует достижению наивысших
+            результатов в учебе.
+          </p>
+          <a href="news.html">Вернуться к Новостям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

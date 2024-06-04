@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Голы и атмосфера: Футбол в лицее</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/s2.jpg" alt="" class="imagem1" />
+          <h3>Голы и атмосфера: Футбол в лицее</h3>
+          <p>
+            Дата: 02.05.2023<br /><br />
+            Футбол в лицее стал неотъемлемой частью его спортивной культуры.
+            Учащиеся собираются на поле, чтобы испытать адреналин соревнования,
+            развивать свои футбольные навыки и демонстрировать свой талант.
+            Команда лицея, известная как "Голевые мастера", выступает на местных
+            и региональных соревнованиях, где они продолжают впечатлять своей
+            игрой и достижениями. <br /><br />Атмосфера на футбольных матчах
+            лицея непревзойденна. Студенты, преподаватели и родители собираются
+            вокруг поля, чтобы поддержать свою команду. Они ожидают каждый мяч,
+            каждый гол и каждую победу, поддерживая игроков громкими
+            аплодисментами и криками поддержки. Футбольные матчи становятся
+            яркими и запоминающимися событиями, которые создают чувство
+            сопереживания и взаимосвязи между всеми присутствующими.
+            <br /><br />Футбольная команда лицея демонстрирует не только
+            выдающиеся спортивные достижения, но и учит ценности командной
+            работы, справедливости и уважения. Каждый игрок играет важную роль в
+            успехе команды и знает, что только объединенные усилия могут
+            привести к победе. Футбол в лицее способствует развитию лидерских
+            качеств, настойчивости и самодисциплины, что помогает учащимся не
+            только на поле, но и в их учебе и жизни. <br /><br />Футбол в лицее
+            не только приносит радость и развлечение, но и способствует развитию
+            физической выносливости, координации и тактического мышления
+            учащихся. Он учит их работать в команде, преодолевать трудности и
+            стремиться к достижению поставленных целей. Футбольная команда лицея
+            становится символом единства и духа борьбы, подтверждающим, что
+            спорт является неотъемлемой частью образования, помогая молодым
+            людям стать сильнее, увереннее и успешнее во всех аспектах их жизни.
+          </p>
+          <a href="sport.html">Вернуться к Спорту</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

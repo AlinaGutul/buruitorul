@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мэрцишор: Весенний символ радости</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/m2.jpg" alt="" class="imagem1" />
+          <h3>Мэрцишор: Весенний символ радости</h3>
+          <p>
+            Дата: 01.03.2023<br><br>
+            Весна – это время расцвета и новых надежд, и одним из самых
+            прекрасных весенних символов является Мэрцишор. В лицее Георгия
+            Победоносца мы празднуем этот день с особой радостью и энтузиазмом.
+            Студенты, преподаватели и администрация вместе создают атмосферу
+            праздника, чтобы приветствовать весну и отпраздновать этот символ
+            радости. <br><br>Мэрцишор – это традиционное румынское украшение, которое
+            символизирует приход весны. В нашем лицее мы организуем
+            мастер-классы по изготовлению Мэрцишоров, где учащиеся учатся
+            создавать эти красивые и символичные украшения своими руками. Мы
+            используем разнообразные материалы, от цветной бумаги до ниток и
+            бисера, чтобы каждый мог выразить свою творческую индивидуальность.
+            <br><br>В день праздника Мэрцишора в лицее царит особая атмосфера радости и
+            сопровождается яркими красками. Ученики и учителя приходят на уроки
+            и мероприятия весело одетыми и с Мэрцишорами на одежде. Все
+            собираются вместе на специальном собрании, где проводятся
+            праздничные выступления, включая песни, танцы и декламацию стихов,
+            посвященных весне и Мэрцишору. <br><br>Мэрцишор – это не только символ
+            весны, но и символ дружбы и солидарности. В лицее Георгия
+            Победоносца мы вместе делимся Мэрцишорами, поздравлениями и
+            пожеланиями счастья и успехов. Этот праздник объединяет нас и
+            напоминает о важности дружбы, поддержки и радости, которые мы можем
+            приносить друг другу.
+          </p>
+          <a href="blog.html">Вернуться к Мероприятиям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

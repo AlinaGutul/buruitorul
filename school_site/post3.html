@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Английский калейдоскоп: Открой мир возможностей</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/m3.jpg" alt="" class="imagem1" />
+          <h3>Английский калейдоскоп: Открой мир возможностей</h3>
+          <p>
+            Дата: 17.02.2023<br /><br />
+            В лицее Георгия Победоносца открыты двери в удивительный мир
+            английского языка. Мы проводим празднование под названием
+            "Английский калейдоскоп", где учащиеся и преподаватели вместе
+            исследуют и погружаются в этот мир возможностей. <br><br>В течение
+            нескольких дней наши ученики участвуют в различных мероприятиях,
+            посвященных английскому языку и культуре англоязычных стран. Мы
+            организуем конкурсы знания английского языка, диктанты, дебаты и
+            тематические викторины. Кроме того, проводятся мастер-классы по
+            изучению британской и американской кухни, традиций и обычаев. <br><br>Важной
+            частью праздника являются театральные постановки на английском
+            языке. Ученики представляют свои собственные спектакли, играют роли
+            героев английской литературы и показывают свои актерские таланты.
+            Это отличная возможность для учащихся проявить свою креативность и
+            улучшить навыки коммуникации на английском языке. <br><br>"Английский
+            калейдоскоп" не только помогает учащимся развивать свои навыки
+            владения английским языком, но и открывает им новые горизонты и
+            возможности. Он позволяет ученикам почувствовать себя частью
+            международного сообщества, расширить свой кругозор и узнать больше о
+            других странах и культурах.
+          </p>
+          <a href="blog.html">Вернуться к Мероприятиям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

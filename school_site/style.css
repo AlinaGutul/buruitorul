@@ -1,0 +1,883 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+/* Навигация */
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vw 8vw;
+  align-items: center;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+nav img {
+  width: 300px;
+  cursor: pointer;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+#menu-btn {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+#menu-close {
+  display: none;
+}
+
+nav .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 21, 100);
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+  color: #fdc93b;
+}
+
+/* Главная */
+#home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/school.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#home h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home p {
+  width: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+#home .btn {
+  margin-top: 30px;
+}
+
+#home a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#home a.blue {
+  color: #fff;
+  background-color: rgb(21, 21, 100);
+  transition: 0.3s ease;
+}
+
+#home a.blue:hover {
+  color: rgb(21, 21, 100);
+  background-color: #fff;
+}
+
+#home a.yellow {
+  color: #fff;
+  background-color: #fdc93b;
+  transition: 0.3s ease;
+}
+
+#home a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background-color: #fff;
+}
+
+/* Особенности */
+#features {
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#features .fea-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#features .fea-box {
+  background: #ebebf0;
+  text-align: start;
+  padding: 15px;
+}
+
+#features .fea-box i {
+  font-size: 2.3rem;
+  color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(46, 46, 59);
+  padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(70, 70, 87);
+}
+
+/* Курсы/тренинги */
+#course {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#course .course-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#course .courses {
+  text-align: start;
+  background-color: #ebebf0;
+  height: 100%;
+  position: relative;
+}
+
+#course .courses img {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+}
+
+#course .courses .details {
+  padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i {
+  color: #fdc93b;
+  font-size: 0.9rem;
+}
+
+#course .courses .cost {
+  background-color: rgb(74, 74, 136);
+  color: #fff;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  bottom: 60px;
+}
+
+/* Администрация */
+#experts {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#experts .expert-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#z1,
+#dir,
+#z2 {
+  width: 350px;
+}
+
+#experts .expert-box .profile {
+  background: #ebebf0;
+  padding: 30px 10px;
+}
+
+/* Footer */
+.footer {
+  background: #bdbdbd;
+  padding: 15px 0px;
+  margin-top: 50px;
+  bottom: 0;
+  width: 100%;
+
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: rgb(65, 65, 65);
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+@media (max-width: 821px) {
+  nav {
+    padding: 15px 20px;
+  }
+  nav img {
+    width: 230px;
+  }
+  #menu-btn {
+    display: initial;
+  }
+
+  #menu-close {
+    display: initial;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 30px 0 20px 20px;
+  }
+  nav .navigation ul {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    background: rgba(17, 20, 104, 0.45);
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.3s ease;
+  }
+  nav .navigation ul.active {
+    right: 0;
+  }
+  nav .navigation ul li {
+    padding: 20px 0 20px 40px;
+    margin-left: 0;
+  }
+  nav .navigation ul li a {
+    color: #fff;
+  }
+  #home {
+    padding-top: 0px;
+  }
+  #home p {
+    width: 90%;
+  }
+  #features {
+    padding: 8vw 4vw 0 4vw;
+  }
+  #course {
+    padding: 8vw 4vw 0 4vw;
+  }
+  #experts {
+    padding: 8vw 4vw 4vw 4vw;
+    text-align: center;
+  }
+}
+
+@media (max-width: 475px) {
+  #home h2 {
+    margin-top: 50px;
+  }
+}
+
+/* About */
+#about-home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/school2.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#about-home h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#about-container img {
+  width: 750px;
+}
+
+#about-container {
+  display: flex;
+  align-items: center;
+  padding: 5vw 8vw 2vw 8vw;
+}
+
+#about-container h2 {
+  color: #29303b;
+  padding-bottom: 15px;
+}
+
+#about-container p {
+  padding-left: 15px;
+  text-align: justify;
+}
+
+#about-container2 p {
+  margin-left: 55px;
+  text-align: justify;
+  margin-right: 70px;
+}
+
+/* Выпускники */
+#graduates {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  text-align: center;
+  padding: 5vw 8vw 2vw 8vw;
+}
+
+#graduates h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+#graduates p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.graduate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.graduate-card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.graduate-card:hover {
+  transform: scale(1.05);
+}
+
+.graduate-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.graduate-card p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 720px) {
+  /* Стили для основного контейнера */
+  #about-container {
+    flex-direction: column;
+  }
+
+  #about-container img {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #about-container .about-text {
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  #about-container .about-text h2 {
+    text-align: center;
+  }
+
+  /* Стили для статистики */
+  #features .fea-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Стили для выпускников */
+  .graduate-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #about-container2 p {
+    margin-left: 45px;
+    width: 310px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  /* Стили для половины экрана */
+  #about-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #about-container h2 {
+    text-align: center;
+  }
+
+  #about-container .about-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #about-container .about-text {
+    width: 100%;
+  }
+
+  #about-container2 p {
+    width: 82%;
+    margin-left: 80px;
+  }
+
+  #blog-container .blogpost .post img{
+    width: 740px;
+    margin-left: -150px;
+    margin-right: -150px;
+  }
+  #blog-container .blogpost .post h3{
+    text-align: center;
+  }
+  #blog-container .blogpost .post p{
+    justify-content: inherit;
+    margin-left: -150px;
+    margin-right: -150px;
+    width: 740px;
+  }
+  #blog-container .blogs .post a{
+    margin-left: -150px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  nav {
+    padding: 15px 20px;
+  }
+  nav img {
+    width: 230px;
+  }
+  #menu-btn {
+    display: initial;
+  }
+
+  #menu-close {
+    display: initial;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 30px 0 20px 20px;
+  }
+  nav .navigation ul {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    background: rgba(17, 20, 104, 0.45);
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.3s ease;
+  }
+  nav .navigation ul.active {
+    right: 0;
+  }
+  nav .navigation ul li {
+    padding: 20px 0 20px 40px;
+    margin-left: 0;
+  }
+  nav .navigation ul li a {
+    color: #fff;
+  }
+}
+
+/* Блог */
+#blog-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8vw;
+}
+
+#blog-container .blogs {
+  width: 60%;
+}
+
+#blog-container .blogs img {
+  width: 100%;
+  border-radius: 19px;
+}
+
+#blog-container .blogs .imagem1 {
+  margin-top: 80px;
+}
+
+#blog-container .cate {
+  width: 30%;
+}
+
+#blog-container .blogs .post h3 {
+  color: #29303b;
+  padding: 15px 0 10px 0;
+}
+
+#blog-container .blogs .post p {
+  color: #757373;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+#blog-container .blogs .post a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: rgb(21, 21, 100);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#blog-container .cate h2 {
+  padding-bottom: 7px;
+}
+
+#blog-container .cate a {
+  text-decoration: none;
+  color: #757373;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+#blog-container .blogs .post {
+  padding-bottom: 60px;
+}
+
+#blog-container .blogpost {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#blog-container .blogpost p {
+  text-align: justify;
+  padding-bottom: 60px !important;
+}
+
+/* About */
+#about-blog {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/blog.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#about-blog h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#blog-container .blogs h1 {
+  color: #29303b;
+  padding: 15px 0 10px 0;
+}
+
+/* Стили для таблицы */
+.schedule {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  height: 50px;
+}
+
+.schedule thead th {
+  background-color: #63acff;
+  color: white;
+}
+
+.schedule tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Стили для select и option */
+.class-select label {
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.class-select select {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.class-select select:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(155, 203, 255, 0.5);
+  border-color: #a4d0ff;
+}
+
+.class-select select {
+  outline: none;
+  box-shadow: 0 0 3px rgba(155, 203, 255, 0.5);
+  border-color: #8db3dc;
+}
+
+.container {
+  padding-top: 180px;
+  width: 90%;
+  justify-content: center;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+table.schedule td:nth-child(1) {
+  background-color: #fdc93b;
+}
+
+div.container {
+  margin: 0 auto; /* Добавляем автоматические отступы по горизонтали */
+  text-align: center; /* Выравниваем содержимое по центру */
+  max-width: 1600px; /* Опционально: ограничиваем максимальную ширину контейнера */
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+#contact-home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/cont.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 140px;
+}
+
+#contact-home h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-right: 20px;
+}
+
+
+.contact-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-info .email {
+  color: #63acff;
+  font-weight: bold;
+}
+
+.contact-info .phone {
+  color: #63acff;
+  font-weight: bold;
+}
+
+.contact-info .address {
+  color: #333;
+}
+
+#map-container {
+  margin-top: 60px;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info,
+  #map-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путешествие в англоязычный мир</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/k2.jpg" alt="" class="imagem1" />
+          <h3>Путешествие в англоязычный мир</h3>
+          <p>
+            Дата: 07.02.2023<br /><br />
+            Конкурсы "Путешествие в англоязычный мир" в школе
+            Георгия Победоносца стали настоящим открытием для всех, кто
+            стремится улучшить свои знания английского языка. Организаторы,
+            учителя английского языка, создали уникальные соревнования, которые
+            позволяют учащимся окунуться в англоязычную среду и применить свои
+            знания на практике. <br /><br />Под руководством опытных учителей
+            английского языка, учащиеся принимают участие в различных заданиях и
+            играх, которые развивают их лексический запас, грамматические навыки
+            и умение говорить на английском языке без стеснения. Конкурсы
+            предлагают увлекательные и интерактивные задания, которые
+            активизируют языковые навыки участников и развивают их
+            коммуникативные способности. <br /><br />Конкурсы "Путешествие в
+            англоязычный мир" помогают учащимся расширить свои горизонты и
+            познакомиться с различными аспектами английской культуры и обычаями.
+            Участники имеют возможность изучить и презентовать проекты о
+            странах, городах, известных личностях и исторических событиях
+            англоязычного мира, что способствует их культурному обогащению и
+            пониманию межкультурных различий. <br /><br />Участие в
+            конкурсах "Путешествие в англоязычный мир" не только помогает
+            учащимся улучшить свои навыки английского языка, но и способствует
+            развитию самоуверенности и уверенности в общении на иностранном
+            языке. Ученики проявляют креативность, смелость и командный дух в
+            ходе соревнований, что помогает им не только стать лучшими
+            владельцами английского языка, но и успешными коммуникаторами в
+            международной среде.
+          </p>
+          <a href="contest.html">Вернуться к Конкурсам</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

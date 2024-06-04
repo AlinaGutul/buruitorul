@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Живая классика</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/k1.jpg" alt="" class="imagem1" />
+          <h3>Живая классика</h3>
+          <p>
+            Дата: 07.04.2023<br /><br />
+            Конкурсы "Живая классика", проводимые в школе Георгия
+            Победоносца, стали настоящими сокровищами для всех ценителей
+            литературы и искусства. Этот захватывающий проект Ирины Волковой
+            позволяет учащимся окунуться в мир классической литературы, стать
+            живыми источниками знаний и воплощениями героев, оживших на
+            страницах книг. <br /><br />Под руководством Ирины Волковой,
+            школьники изучают произведения великих авторов и проникаются их
+            смыслом, погружаясь в истории, философию и эмоции, описанные на
+            страницах книг. Они активно обсуждают и анализируют произведения,
+            ищут глубину и истину в словах классических авторов, а затем
+            переносят свои открытия на сцену, воссоздавая яркие образы
+            исторических персонажей. <br /><br />Особая черта конкурсов "Живая
+            классика" заключается в том, что они развивают не только актерское
+            мастерство, но и способность адаптироваться к разным эпохам и
+            культурам. Учащиеся не только изучают литературу, но и исследуют
+            исторический контекст, моду, обычаи и традиции разных времен. Это
+            помогает им лучше понять произведения и их авторов, а также
+            расширяет их кругозор и культурные горизонты. <br /><br />
+            Конкурсы "Живая классика", организованные Ириной Волковой, не только
+            приносят радость и вдохновение участникам, но и способствуют
+            развитию их уверенности в себе, публичных выступлений,
+            коммуникативных навыков и творческого мышления. Школьники,
+            принимающие участие в этих конкурсах, учатся работать в команде,
+            находить общий язык с одноклассниками и раскрывать свой потенциал на
+            сцене.
+          </p>
+          <a href="contest.html">Вернуться к Конкурсам</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

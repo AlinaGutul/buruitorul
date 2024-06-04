@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Программирование (FRONT-END)</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/c4.jpg" alt="" class="imagem1" />
+          <h3>Программирование (FRONT-END)</h3>
+          <p>
+            Курсы программирования (Front-End) под руководством Алины Гуцул -
+            это идеальное место для тех, кто хочет освоить навыки веб-разработки
+            и создания пользовательских интерфейсов. Алина - опытный
+            разработчик, который поможет вам погрузиться в мир фронт-энд
+            разработки и освоить современные технологии. <br><br>Наши курсы
+            программирования предлагают полный спектр знаний и навыков,
+            необходимых для работы в области фронт-энд разработки. Вы научитесь
+            создавать адаптивные веб-сайты, управлять HTML, CSS и JavaScript,
+            использовать различные фреймворки и инструменты для разработки
+            интерфейсов. Каждое занятие предлагает практические задания и
+            проекты, чтобы вы могли немедленно применить свои знания на
+            практике. <br><br>Курсы программирования (Front-End) с Алиной Гуцул доступны
+            по цене 1100 лей в месяц. Мы предлагаем качественное обучение по
+            доступной цене, чтобы сделать программирование доступным для всех.
+            Наши занятия проводятся в небольших группах, что позволяет каждому
+            студенту получить индивидуальное внимание и помощь от опытного
+            преподавателя. <br><br>Присоединяйтесь к нам на наших курсах
+            программирования и начните свой путь в веб-разработке. Под
+            руководством Алины Гуцул вы освоите востребованные навыки и сможете
+            создавать удивительные пользовательские интерфейсы. Инвестируйте в
+            свое будущее и откройте новые возможности в сфере информационных
+            технологий.
+          </p>
+          <a href="curs.html">Вернуться к Курсам</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Голоса книг</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/k3.jpg" alt="" class="imagem1" />
+          <h3>Голоса книг</h3>
+          <p>
+            Дата: 06.02.2023<br /><br />
+            Конкурсы "Голоса книг" в школе Георгия Победоносца
+            стали настоящим открытием для всех, кто увлечен миром слов и
+            историй. Организатор Ирина Волкова с огромной любовью к русской
+            литературе и чтению приглашает учащихся в увлекательное путешествие
+            по страницам классических произведений. <br /><br />Под
+            руководством Ирины Волковой, учащиеся изучают и анализируют
+            литературные произведения разных эпох и жанров. Они раскрывают
+            смыслы текстов, изучают характеры героев, а затем проявляют свои
+            актерские способности, читая отрывки из произведений вслух. Конкурсы
+            "Голоса книг" способствуют развитию языковой культуры и
+            литературного вкуса участников. <br /><br />Конкурсы "Голоса книг"
+            являются идеальной площадкой для творческого самовыражения учащихся.
+            Они могут выбирать отрывки из своих любимых произведений и
+            подчеркивать особенности голосовых характеристик разных персонажей.
+            Это помогает развить навыки актерского мастерства, выразительности
+            чтения и умение заинтересовать слушателей. <br /><br />Участие
+            в конкурсах "Голоса книг" позволяет учащимся проникнуться магией
+            слова и литературы, улучшить свою артикуляцию и выразительность
+            речи. Они учатся понимать глубину произведений, передавать эмоции
+            героев и влиять на аудиторию своим чтением. Конкурсы создают
+            благоприятную атмосферу для раскрытия талантов и развития речевых
+            навыков участников.
+          </p>
+          <a href="contest.html">Вернуться к Конкурсам</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

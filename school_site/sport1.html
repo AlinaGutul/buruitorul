@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Короли площадки: Баскетбольная команда лицея на пути к успеху</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/s1.jpg" alt="" class="imagem1" />
+          <h3>Короли площадки: Баскетбольная команда лицея на пути к успеху</h3>
+          <p>
+            Дата: 25.05.2023<br><br>
+            "Короли площадки" – это команда, состоящая из
+            студентов лицея, которые разделяют общую страсть к баскетболу и
+            стремление к достижению высот в этом виде спорта. Их усердные
+            тренировки, постоянное совершенствование и слаженная командная
+            работа стали фундаментом их успеха. Они не только представляют лицей
+            на соревнованиях, но и становятся источником вдохновения и гордости
+            для всего учебного заведения. <br><br>Баскетбольная команда
+            лицея продолжает преуспевать и привлекать все больше внимания своими
+            результатами. Они соревнуются на местных, региональных и даже
+            национальных уровнях, демонстрируя свою мастерство и талант. "Короли
+            площадки" развивают свои навыки, стратегии и тактику под
+            руководством опытных тренеров, которые помогают им вырасти как
+            спортсменам и лидерам. <br><br>Успех команды "Короли площадки"
+            отражает не только их индивидуальное умение играть в баскетбол, но и
+            дух коллективной работы и сотрудничества. Они доказывают, что
+            сильная команда может достичь великих высот, когда каждый игрок
+            выступает во благо команды. Вся команда работает в гармонии,
+            поддерживая друг друга и выделяясь на фоне других команд своей
+            коллективной силой и детерминированностью. <br><br>Участие
+            в баскетбольной команде "Короли площадки" не только помогает
+            студентам развивать свои спортивные навыки, но и учит их важности
+            справедливости, дисциплины и ответственности. Эти ценности
+            переносятся на их учебу и повседневную жизнь, делая их не только
+            лучшими спортсменами, но и лидерами в своих областях. Баскетбольная
+            команда лицея стала неотъемлемой частью его культуры и
+            демонстрирует, что спорт и образование могут идти рука об руку,
+            помогая молодым людям раскрыть свой потенциал и достичь больших
+            высот в жизни.
+          </p>
+          <a href="sport.html">Вернуться к Спорту</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

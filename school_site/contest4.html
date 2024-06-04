@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шедевры для крылатых</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/k4.jpg" alt="" class="imagem1" />
+          <h3>Шедевры для крылатых</h3>
+          <p>
+            Дата: 02.03.2023<br /><br />
+            Конкурсы "Шедевры для крылатых" в школе Георгия
+            Победоносца стали настоящим праздником для всех, кто увлечен
+            природой и птицами. Организатор Ирина Кривая, с большой любовью к
+            животному миру, помогает учащимся понять потребности и предпочтения
+            различных птиц, а затем воплотить свои идеи в создании уникальных
+            скворечников. <br /><br />Под руководством Ирины Кривой, учащиеся
+            изучают особенности разных видов птиц, их образ жизни и потребности
+            в жилище. Затем они воплощают свои знания и творческий потенциал,
+            создавая инновационные и оригинальные скворечники. От классических
+            дизайнов до смелых экспериментов, каждый скворечник становится
+            уникальным произведением искусства. <br /><br />Конкурсы "Шедевры
+            для крылатых" не только развивают творческий потенциал учащихся, но
+            и имеют важное значение для сохранения птиц. Скворечники, созданные
+            участниками, становятся безопасными гнездовыми местами для различных
+            видов пернатых. Это не только помогает птицам сохранить свои
+            популяции, но и способствует балансу экосистемы и охране
+            биоразнообразия. <br /><br />Участие в конкурсах "Шедевры для
+            крылатых" позволяет ученикам не только развивать свои рукодельные и
+            творческие навыки, но и глубже погрузиться в мир птиц и природы. Они
+            узнают о миграциях, питании, размножении и поведении птиц, а также о
+            роли, которую они играют в экосистеме. Эти конкурсы не только
+            вдохновляют учащихся, но и способствуют формированию экологического
+            сознания и ответственного отношения к окружающей среде.
+          </p>
+          <a href="contest.html">Вернуться к Конкурсам</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

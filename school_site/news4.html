@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завершение учебного года: Последний звонок</title>
+    <link rel="icon" href="images/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Навигация-->
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a class="active" href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/n4.jpg" alt="" class="imagem1" />
+          <h3>Завершение учебного года: Последний звонок</h3>
+          <p>
+            Дата: 30.05.2023<br><br>
+            Последний звонок – это не только просто звуковой сигнал, но и
+            символический акт, объединяющий учащихся, учителей и родителей. Он
+            олицетворяет окончание одного этапа и начало новых возможностей,
+            приключений и вызовов. Этот момент является временем отражения и
+            оценки достижений, а также планирования будущих целей и амбиций.
+            <br /><br />
+            В день последнего звонка ученики и педагоги собираются вместе, чтобы
+            отметить завершение учебного года. Это может включать в себя
+            торжественную церемонию, где ученикам вручаются аттестаты или другие
+            награды за их достижения. Также часто проводятся различные концерты,
+            выступления, спортивные мероприятия или творческие выставки, где
+            ученики имеют возможность продемонстрировать свои таланты и
+            достижения. <br /><br />
+            Последний звонок является временем прощания и благодарности. Ученики
+            и учителя могут выразить свою признательность друг другу за
+            совместно пройденный учебный год, взаимопонимание и поддержку. Это
+            также момент, когда выпускники могут выразить свою благодарность
+            своим учителям и родителям за поддержку и руководство во время их
+            образовательного пути.<br /><br />Последний звонок – это также время
+            для мечтаний и планов на будущее. Ученики и выпускники могут
+            задуматься о своих дальнейших шагах и поставить новые цели. Они
+            могут размышлять о своих увлечениях, интересах и возможных
+            профессиональных путях, которые они хотели бы исследовать в будущем.
+            Этот момент напоминает им, что они могут достичь всего, чего желают,
+            и что их образовательный путь только начинается.
+          </p>
+          <a href="news.html">Вернуться к Новостям</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">Copyright © 2023 || Designed By: Gutul Alina</div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
